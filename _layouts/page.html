@@ -1,0 +1,90 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+{% if page.background %}
+<header class="masthead"
+  style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//' , '/' }}')">
+  {% else %}
+  <header class="masthead">
+    {% endif %}
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>{{ page.title }}</h1>
+            {% if page.description %}
+            <span class="subheading">{{ page.description }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        {% if page.title == "Posts" %}
+        <div class="category-filter mb-4">
+          <h3>Filter by Category:</h3>
+          <div class="btn-group" role="group" aria-label="Category filter buttons">
+            <a href="?category=Compiler" class="btn btn-primary">Tech</a>
+            <a href="?category=Lifestyle" class="btn btn-primary">Lifestyle</a>
+            <a href="?category=Other" class="btn btn-primary">Other</a>
+            <a href="/posts" class="btn btn-primary">All</a>
+          </div>
+        </div>
+
+        <div id="posts-container">
+          {% for post in site.posts %}
+          <div class="post-preview" data-category="{{ post.category }}">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <h2 class="post-title">{{ post.title }}</h2>
+              <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+            </a>
+            <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+          </div>
+          <hr class="post-divider">
+          {% endfor %}
+        </div>
+
+        {% else %}
+        {{ content }}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const selectedCategory = urlParams.get('category');
+
+      if (selectedCategory) {
+        const posts = document.querySelectorAll('.post-preview');
+        let visiblePosts = 0;
+        posts.forEach(post => {
+          const postCategory = post.getAttribute('data-category');
+          if (postCategory !== selectedCategory && selectedCategory !== "All") {
+            post.style.display = 'none';
+          } else {
+            visiblePosts++;
+          }
+        });
+
+        // Hide all dividers except for the last visible post
+        const dividers = document.querySelectorAll('.post-divider');
+        dividers.forEach((divider, index) => {
+          if (index >= visiblePosts - 1) {
+            divider.style.display = 'none';
+          }
+        });
+      }
+    });
+  </script>
+
+  <!-- Removed Bootstrap CSS link to keep original styles -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
