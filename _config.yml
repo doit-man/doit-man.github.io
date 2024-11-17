@@ -4,8 +4,8 @@ description:        My note, my experience
 author:             Doit-Man
 baseurl:            ""
 url:                "https://doit-man.github.io"
-theme: jekyll-theme-clean-blog
-
+# theme: jekyll-theme-clean-blog
+remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 # Social Profiles
 twitter_username:   SBootstrap
 github_username:    StartBootstrap
