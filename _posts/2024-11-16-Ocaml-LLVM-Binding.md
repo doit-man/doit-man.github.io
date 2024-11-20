@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "OCaml LLVM 바인딩 만들기"
-date: 2020-01-31 10:45:13
+date: 2024-11-16 10:45:13
 category: "Tech"
-background: '/img/posts/06.jpg'
 ---
+
 ## OCaml LLVM 바인딩
 LLVM은 기본적으로 LLVM IR을 다른 C/C++이 아닌 다른 단어로 다루기 위한 바인딩(Bingdings)를 기본적으로 제공한다.
 예전에는 Python와 같은 다른 언어들도 지원했지만 현재는 OCaml만 지원하고 있다.
@@ -94,9 +94,9 @@ value llvm_transforms_utils_clone_function_with_retty(value F, value RetTy) {
     -std=c++17)))
  (c_library_flags (-lLLVM-16) (-L/usr/lib/llvm-16/lib) -lstdc++)
  ```
- 여기서 사용한 llvm 버전만 사용자 환경에 맞추어 변경한다면 이제 프로젝트를 빌드할 때 우리가 작성한 바인딩 cpp 파일도 빌드가 될 것이다.
+여기서 사용한 llvm 버전만 사용자 환경에 맞추어 변경한다면 이제 프로젝트를 빌드할 때 우리가 작성한 바인딩 cpp 파일도 빌드가 될 것이다.
  
- 이제, 우리가 만든 바인딩 함수를 가져다 써보자
+이제, 우리가 만든 바인딩 함수를 가져다 써보자
 ```ocaml
 external is_nsw_raw : llvalue -> bool = "llvm_is_nsw"
 
