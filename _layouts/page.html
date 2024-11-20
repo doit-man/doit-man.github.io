@@ -12,7 +12,7 @@ layout: default
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-10 col-md-12 mx-auto">
           <div class="page-heading">
             <h1>{{ page.title }}</h1>
             {% if page.description %}
@@ -26,13 +26,13 @@ layout: default
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
+      <div class="col-lg-10 col-md-12 mx-auto">
         {% if page.title == "Posts" %}
         <div class="category-filter mb-4">
           <h3>Filter by Category:</h3>
           <div class="btn-group" role="group" aria-label="Category filter buttons">
-            <a href="?category=Compiler" class="btn btn-primary">Tech</a>
-            <a href="?category=Lifestyle" class="btn btn-primary">Lifestyle</a>
+            <a href="?category=Tech" class="btn btn-primary">Tech</a>
+            <a href="?category=Life" class="btn btn-primary">Life</a>
             <a href="?category=Other" class="btn btn-primary">Other</a>
             <a href="/posts" class="btn btn-primary">All</a>
           </div>
