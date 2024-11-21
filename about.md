@@ -36,6 +36,7 @@ In my previous work, we discovered 55 new miscompilation bugs in latest LLVM.
 - **Languages**: Fluent in **Korean** (Native) and proficient in **English** (B2).
 
 ## Achievements
+- Reported 55 new miscompilation bugs in latest LLVM : see our **[BugList]({{ "/assets/BugList.html" | relative_url }})**
 - Reported vulnerability in major systems: **Microsoft Windows**, **Samsung Galaxy**, **McAfee Antivirus**, **HP**, **Acer**, etc.
 
 ## Personal Interests

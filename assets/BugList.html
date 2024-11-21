@@ -1,0 +1,266 @@
+<table>
+  <thead>
+    <tr>
+      <th>Issues</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/96130">96130</a></td>
+      <td>Wrong canonicalization by InstCombine</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/96857">96857</a></td>
+      <td>Wrong `xor` --> `or disjoint` due to undef inputs</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/97053">97053</a></td>
+      <td>Wrong swap between `sdiv` and `extractelement` by InstCombine</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/97730">97730</a></td>
+      <td>Wrong masked merge of vector operands by InstCombine</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/98433">98433</a></td>
+      <td>Wrong vector select folding on undef values by InstCombine</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/98434">98434</a></td>
+      <td>Wrong splatting condition of vector select by InstCombine</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/98435">98435</a></td>
+      <td>Wrong select folding for undef conditions by InstCombine</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/98441">98441</a></td>
+      <td>Wrong constant fold for ICmp by InstCombine</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/98444">98444</a></td>
+      <td>Wrong PHI simplification</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/99268">99268</a></td>
+      <td>`load` wrongly replaced to `trunc (bitcast ...)` by GVN</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/99797">99797</a></td>
+      <td>Wrong simplification by GVN</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113077">113077</a></td>
+      <td>Wrong ICmp folding of `and` and `or`</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113123">113123</a></td>
+      <td>Wrong canonicalization of a range check idiom</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113259">113259</a></td>
+      <td>Wrong narrowing `and` operands for undef inputs</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113261">113261</a></td>
+      <td>Wrong `select` `icmp` folding</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113301">113301</a></td>
+      <td>Wrong canonicalization of `add` and bitwise logic operation</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113423">113423</a></td>
+      <td>Wrong folding of `select` into floating number ops</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113425">113425</a></td>
+      <td>`slp-vectorizer` miscompiles when creating `shufflevector` and vectorizing many ops</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113515">113515</a></td>
+      <td>Wrong canonicalization of `select` for a vector of poisonous values</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113520">113520</a></td>
+      <td>`slp-vectorizer` miscompilation</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113536">113536</a></td>
+      <td>Increasing undefinedness during simplification `and` and `xor`</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113539">113539</a></td>
+      <td>Wrong folding of `and` and `or` of `icmp`s</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113635">113635</a></td>
+      <td>Wrong folding of a binary operator into a phi node</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113858">113858</a></td>
+      <td>Wrong folding binary ops with PHI operands</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113860">113860</a></td>
+      <td>Wrong simplification of `or` and `icmp`s on a undefined value</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113862">113862</a></td>
+      <td>Wrong folding `and/or` of logical values</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113863">113863</a></td>
+      <td>Wrong folding a binary operator into PHI</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113865">113865</a></td>
+      <td>Wrong `nsw`, `nuw` flag set on undefined values</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113866">113866</a></td>
+      <td>Wrong folding of `select` and `shufflevector` (commutativity check)</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113867">113867</a></td>
+      <td>Can't splat undefined conditions</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113869">113869</a></td>
+      <td>Poison value wrongly propagates through vector operations on an optimized code</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113988">113988</a></td>
+      <td>Wrong simplification of nested `select` using an implied condition</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113989">113989</a></td>
+      <td>Wrong folding to `fabs` (`NaN` not handled)</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113990">113990</a></td>
+      <td>Wrong case of `select` folding of symmetric select</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/113992">113992</a></td>
+      <td>Wrong substitution of a PHI node</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114178">114178</a></td>
+      <td>InstCombine miscompilation</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114181">114181</a></td>
+      <td>[InstCombine] Wrong negation of vector selection with a poison value</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114182">114182</a></td>
+      <td>[InstCombine] wrong negation of PHI</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114183">114183</a></td>
+      <td>[InstCombine] Wrong negation of vector subtraction</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114191">114191</a></td>
+      <td>[InstCombine] miscompilation of `or` of vectors</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114350">114350</a></td>
+      <td>[InstCombine] miscompilation folding `or`</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114352">114352</a></td>
+      <td>[InstCombine] shouldn't set `exact` on `shr (shl ...)` for undefined inputs</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114354">114354</a></td>
+      <td>[InstCombine] wrong folding of `(lshr (add (zext X), (zext Y)), K)` for undefined inputs</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114355">114355</a></td>
+      <td>[InstCombine] wrong folding of `shufflevector` with a binary operator</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114358">114358</a></td>
+      <td>[InstCombine] wrong folding of an extension and a binary operator for undefined inputs</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114359">114359</a></td>
+      <td>[InstCombine] increased undefinedness when folding `(or (and (bitcast F) INTMAX), INTMIN)`</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114734">114734</a></td>
+      <td>[InstCombine] wrong folding of multiplication to shift for an undefined input</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114736">114736</a></td>
+      <td>[InstCombine] wrong folding of `lshr (mul ...)` to `(add (lshr ..)` for an undefined input</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114738">114738</a></td>
+      <td>[SLPVectorizer] wrong vectorization to `reduce_or` due to poisonous value</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114752">114752</a></td>
+      <td>[InstCombine] an element is overwritten as a `poison`</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114901">114901</a></td>
+      <td>[VectorCombine] miscompilation</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114902">114902</a></td>
+      <td>[CorrelatedPropagation] wrong range inference with merge of undef and constant</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114903">114903</a></td>
+      <td>wrong overflow flag in correlated propagation</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114905">114905</a></td>
+      <td>wrong folding of `select`s in slp-vectorizer</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/114947">114947</a></td>
+      <td>`fcmp` miscompiled to a constant</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/115123">115123</a></td>
+      <td>[CorrelatedPropagation] `and X, C` wrongly replaced to `X (!range ...)`</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/115301">115301</a></td>
+      <td>[GVN] mishandle of `phi`</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/115454">115454</a></td>
+      <td>[InstCombine] miscompilation</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/115456">115456</a></td>
+      <td>[InstCombine] miscompilation of `-X * Y --> -(X * Y)`</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/115458">115458</a></td>
+      <td>[InstCombine] miscompilation  of `mul (sext X), Y -> select X, -Y, 0`</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/115465">115465</a></td>
+      <td>[InstCombine] folded select produces different result on a blended vector</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/115574">115574</a></td>
+      <td>[InstSimplify] wrong folding of pointer comparison `select (icmp eq ptr ...)`</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/115575">115575</a></td>
+      <td>[VectorCombine] UB triggered after optimization</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/llvm/llvm-project/issues/115651">115651</a></td>
+      <td>[InstSimplify][InstCombine] miscompilation of comparison with `min` instrinsic</td>
+    </tr>
+  </tbody>
+</table>
