@@ -4,6 +4,8 @@ description:        My note, my experience
 author:             Doit-Man
 baseurl:            ""
 url:                "https://doit-man.github.io"
+timezone: Asia/Seoul
+future: true
 # theme: jekyll-theme-clean-blog
 remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 # Social Profiles
